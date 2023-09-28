@@ -35,7 +35,6 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
     --header-font: 'myriad-pro', 'sans-serif';
     --p-font: 'Arial', 'Helvetica', 'sans-serif';
     --p-font-size: 17px;
-    --p-line-height: 1.5;
     
 
     /* Content */
@@ -62,12 +61,17 @@ header{
     font-size: 45px;
 }
 
+/* Text Formatting */
 .text-pop {
     color: var(--pop);
 }
 
 .text-light {
     color: var(--light);
+}
+
+.p-spaced {
+    line-height: 1.5;
 }
 
 body {
@@ -115,7 +119,6 @@ body {
     margin: 35px 15px 35px 15px;
     font-family: var(--p-font);
     font-size: var(--p-font-size);
-    line-height: var(--p-line-height);
 }
 
 
