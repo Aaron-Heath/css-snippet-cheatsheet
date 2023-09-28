@@ -33,6 +33,9 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
     /* Font Themes */
     --header-bold: 900;
     --header-font: 'myriad-pro', 'sans-serif';
+    --p-font: 'Arial', 'Helvetica', 'sans-serif';
+    --p-font-size: 17px;
+    --p-line-height: 1.5;
     
 
     /* Content */
@@ -49,6 +52,10 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
 }
 
 /* Header */
+header{
+    padding: 25px 0 15px 0;
+}
+
 .header {
     font-weight: var(--header-bold);
     font-family: var(--header-font);
@@ -106,6 +113,9 @@ body {
 
 .card-text {
     margin: 35px 15px 35px 15px;
+    font-family: var(--p-font);
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
 }
 
 
