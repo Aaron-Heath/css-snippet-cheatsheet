@@ -1,0 +1,87 @@
+:root{
+    /* Color Themes */
+    --dark: #333940;
+    --pop: #e867ed;
+    --light: white;
+    /* Content */
+    --row-header: "Flexbox Row";
+    --column-header: "Flexbox Column";
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.text-pop {
+    color: var(--pop);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+body {
+    background-color: var(--dark);
+}
+
+/* Main Content */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    justify-content: space-around;
+    margin: 0 2%;
+}
+
+/* Content Cards */
+.card {
+    border: 2px dashed var(--light);
+    height: 200px;
+    flex: 1 1 30.33%;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.card::before {
+    position: absolute;
+    content: "Header";
+    color: var(--pop);
+    background-color: var(--dark);
+
+    font-weight: bold;
+    font-size: 30px;
+
+    top: -20px;
+    left: 15px;
+    right: 15px;
+    margin: auto;
+    border: 3px solid var(--light);
+    border-radius: 5px;
+}
+
+.card-text {
+    margin: 35px 15px 35px 15px;
+}
+
+
+#subtitle {
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin:auto;
+}
+
+#flexbox-row::before {
+    content:var(--row-header);
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        flex: 1 1 45%;
+    }
+
+    #subtitle {
+        width: 75%
+    }
+    
+}
