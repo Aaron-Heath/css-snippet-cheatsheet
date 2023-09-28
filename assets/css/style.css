@@ -6,6 +6,10 @@
     /* Content */
     --row-header: "Flexbox Row";
     --column-header: "Flexbox Column";
+    --grid-header: "CSS Grid Layout";
+    --gradient-header: "Linear Gradients";
+    --glow-header: "Box Transition Glow";
+    --overlay-header: "Overlay Card with Title";
 }
 
 * {
@@ -78,6 +82,22 @@ body {
 
 #flexbox-column::before {
     content: var(--column-header);
+}
+
+#css-grid-layout::before {
+    content: var(--grid-header);
+}
+
+#linear-gradients::before {
+    content: var(--gradient-header);
+}
+
+#box-transition-glow::before {
+    content: var(--glow-header);
+}
+
+#overlay-card-title::before {
+    content: var(--overlay-header);
 }
 
 @media screen and (max-width: 991px) {
