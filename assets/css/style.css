@@ -125,8 +125,8 @@ body {
 #subtitle {
     text-align: center;
     justify-content: center;
-    width: 60%;
-    margin:auto;
+    width: 70%;
+    margin: 0 auto 40px auto;
 }
 
 /* Card Headers */
@@ -160,7 +160,7 @@ body {
     }
 
     #subtitle {
-        width: 75%
+        width: 80%
     }
     
 }
