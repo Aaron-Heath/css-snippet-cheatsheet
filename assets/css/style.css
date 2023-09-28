@@ -75,6 +75,10 @@ body {
     content:var(--row-header);
 }
 
+#flexbox-column::before {
+    content: var(--column-header);
+}
+
 @media screen and (max-width: 991px) {
     .card {
         flex: 1 1 45%;
